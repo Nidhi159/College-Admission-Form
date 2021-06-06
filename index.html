@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src = "app.js"></script>
+    <title>Sedar Medical College Admission</title>
+    
+</head>
+<body>
+  <div id ="header">
+      <div class ="head">
+       <h3><caption>Sedar Medical College Admission </caption></h3>
+       </div>
+   <br>
+   <form onsubmit="return display()">
+<div id ="tab">
+        <div class="data">
+        <label><b></b>Student Name</b></label>
+        <input type="text" placeholder="Enter the student name"  id="sname" >
+        </div>
+
+        <div class="data">
+        
+          <label><b>Phone Number</b></label>  
+             <input type="text" placeholder="Enter the phone number" id="phno" >
+        
+        </div>
+        
+        <div class="data">
+        
+          <label><b>Admission Id</b></label>
+            <input type="text" placeholder="Enter the admission id"  id="aid">
+        
+        </div>
+
+        <div class="data">
+        
+            <label><b>Date of Admission</b></label>
+               <input type="date" placeholder="mm/dd/yy"  id="admissiondate">
+        </div>
+
+        <div class="data">
+            <label><b>Department Name</b></label>
+                <select id="deptname">
+                  <option>Select Department</option>
+                  <option value="MBBS">MBBS</option>
+                    <option value="BDS">BDS</option>
+                    <option value="BHMS">BHMS</option>
+                </select>
+        </div>
+
+        <div class="data">
+          
+            <label><b>Prefer college hostel</b></label>
+            <span id ="rad">
+              <input type="radio" id="yes" name="Prefer college hostel" value="yes">
+                  yes
+             <input type="radio" id="no" name="Prefer college hostel" value="no">
+                no
+            </span>
+                
+        </div>
+        <div class="data">
+          <label><b>First Graduates</b></label>
+                <span id="box">
+                <input type="checkbox" id="firstGraduate"> 
+                <p>Click if you are first graduate</p>
+
+            </span>
+        </div>
+
+</div>
+    
+    <div class="data">
+      
+      <input type="submit" value="Confirm Admission" id="submit" class="head">
+    </div>
+</form>
+<div id="result"></div>
+  </div>
+  
+
+</body>
+</html>
